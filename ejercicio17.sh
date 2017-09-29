@@ -1,8 +1,6 @@
 #!/bin/bash
 
-#imprime en pantalla los archivos del directorio actual
-#intercambia minúsculas y mayúsculas, además de eliminar la letra aA
+echo $(ls ./ | tr b-zB-Z B-Zb-z | tr -d aA ) 
 
-ls | tr a-zA-Z A-Za-z |tr -d aA
-
+exit 0
 
